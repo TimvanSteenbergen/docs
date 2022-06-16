@@ -29,7 +29,7 @@ The expression defines the criteria that a string should be checked against in a
 
 {{% alert color="info" %}}
 
-For example, an expression for checking the Dutch post code could be: `[1-9][0-9][0-9][0-9] ?[A-Za-z][A-Za-z]`.
+For example, an expression for checking the Dutch post code could be: `[1-9][0-9]{3} ?(?![Ss][AaDdSs])[A-Za-z]{2}`.
 
 Here are two post code examples: **3072AP** and **7500 AH**.
 
@@ -37,6 +37,7 @@ These are the criteria:
 
 * The first character is a digit in the range 1 to 9
 * The second, third and fourth characters are digits in the range 0 to 9
+* The next two characters are not SA, SD or SS in any upper- or lowercase combination. These SA, SD and SS combination are not used in Dutch postcodes.   
 * The last two characters are letters, as expressed by the last two subexpression [A-Za-z], which indicate that the last two characters should be in the range A-Z or the range a-z
 * Between the digits and the letters there can be a space, as expressed by the subexpression which consists of a space and a question mark; the question mark indicates that the space is optional
 
