@@ -11,7 +11,7 @@ description: "Describes the Data Hub pane in Mendix Studio Pro."
 
 You can search in the Catalog through the **Data Hub** pane to discover data sources that you can use in your app. Via this pane you can add the entities that are exposed in the registered OData services—called **Data Sources** in Data Hub—into your app's domain model. These entities are called [external entities](/refguide9/external-entities/) and are different because they enable the connection to the data associated with the entities in the originating app.
 
-To display the **Data Hub** pane, click **View** > **Data Hub**.
+To display the **Data Hub** pane, click **View** > **Data Hub** (in Mx10: > **Integration pane**).
 
 {{% alert color="info" %}}
 In the Catalog, registered published services are referred to as *data sources*. Exposed entities will show the **Entity set** name and are called *datasets.*
